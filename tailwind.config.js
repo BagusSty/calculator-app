@@ -1,0 +1,53 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  darkMode: false,
+  content: [],
+  theme: {
+    extend: {
+      colors: {
+        theme1: {
+          mainBg: "hsl(222, 26%, 31%)",
+          toggleBg: "hsl(223, 31%, 20%)",
+          screenBg: "hsl(224, 36%, 15%)",
+          keyBg1: "hsl(225, 21%, 49%)",
+          keySd1: "hsl(224, 28%, 35%)",
+          keyBg2: "hsl(6, 63%, 50%)",
+          keySd2: "hsl(6, 70%, 34%)",
+          keyBg3: "hsl(30, 25%, 89%)",
+          keySd3: "hsl(28, 16%, 65%)",
+          text1: "hsl(221, 14%, 31%)",
+          text2: " hsl(0, 0%, 100%)",
+        },
+        theme2: {
+          mainBg: "hsl(0, 0%, 90%)",
+          toggleBg: "hsl(0, 5%, 81%)",
+          screenBg: "hsl(0, 0%, 93%)",
+          keyBg1: "hsl(185, 42%, 37%)",
+          keySd1: " hsl(185, 58%, 25%)",
+          keyBg2: "hsl(25, 98%, 40%)",
+          keySd2: "hsl(25, 99%, 27%)",
+          keyBg3: "hsl(45, 7%, 89%)",
+          keySd3: "hsl(35, 11%, 61%)",
+          text1: "hsl(0, 0%, 100%)",
+          text2: "hsl(60, 10%, 19%)",
+        },
+        theme3: {
+          mainBg: "hsl(222, 26%, 31%)",
+          toggleBg: "hsl(268, 71%, 12%)",
+          screenBg: "hsl(268, 71%, 12%)",
+          keyBg1: "hsl(281, 89%, 26%)",
+          keySd1: "hsl(285, 91%, 52%)",
+          keyBg2: "hsl(176, 100%, 44%)",
+          keySd2: "hsl(177, 92%, 70%)",
+          keyBg3: "hsl(268, 47%, 21%)",
+          keySd3: "hsl(290, 70%, 36%)",
+          text1: "hsl(0, 0%, 100%)",
+          text2: "hsl(52, 100%, 62%)",
+          text3: "hsl(198, 20%, 13%)",
+        },
+      },
+    },
+  },
+  plugins: [],
+};
