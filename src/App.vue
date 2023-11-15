@@ -1,8 +1,10 @@
 <script>
+import { evaluate } from "mathjs";
 export default {
   data() {
     return {
       bg: 1,
+      expression: "",
     };
   },
   methods: {
@@ -14,6 +16,21 @@ export default {
     },
     theme3() {
       this.bg = 3;
+    },
+    calculate() {
+      this.expression = this.expression.replace(/\s/g, "");
+      this.expression = evaluate(this.expression);
+      if (this.expression == Infinity) {
+        this.expression = "Infinity";
+      } else if (
+        typeof this.expression === "number" &&
+        !Number.isInteger(this.expression)
+      ) {
+        this.expression = this.expression.toFixed(4);
+      }
+    },
+    reset() {
+      this.expression = "";
     },
   },
 };
@@ -131,6 +148,18 @@ export default {
           'text-theme2-text2': bg === 2,
           'text-theme3-text2': bg === 3,
         }"
+        v-if="expression != ''"
+      >
+        {{ expression }}
+      </h1>
+      <h1
+        class="text-7xl"
+        :class="{
+          'text-theme1-text2': bg === 1,
+          'text-theme2-text2': bg === 2,
+          'text-theme3-text2': bg === 3,
+        }"
+        v-else
       >
         0
       </h1>
@@ -152,6 +181,7 @@ export default {
               'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
               'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
             }"
+            @click.stop="expression += '7'"
           >
             <p
               class="text-3xl"
@@ -173,6 +203,7 @@ export default {
               'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
               'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
             }"
+            @click.stop="expression += '8'"
           >
             <p
               class="text-3xl"
@@ -194,6 +225,7 @@ export default {
               'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
               'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
             }"
+            @click.stop="expression += '9'"
           >
             <p
               class="text-3xl"
@@ -215,6 +247,7 @@ export default {
               'bg-theme2-keyBg1 shadow-theme2-keySd1': bg === 2,
               'bg-theme3-keyBg1 shadow-theme3-keySd1': bg === 3,
             }"
+            @click.stop="expression -= expression"
           >
             <p
               class="text-2xl text-theme1-keyBg3"
@@ -238,6 +271,7 @@ export default {
               'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
               'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
             }"
+            @click.stop="expression += '4'"
           >
             <p
               class="text-3xl"
@@ -259,6 +293,7 @@ export default {
               'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
               'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
             }"
+            @click.stop="expression += '5'"
           >
             <p
               class="text-3xl"
@@ -280,6 +315,7 @@ export default {
               'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
               'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
             }"
+            @click.stop="expression += '6'"
           >
             <p
               class="text-3xl"
@@ -301,6 +337,7 @@ export default {
               'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
               'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
             }"
+            @click.stop="expression += '+'"
           >
             <p
               class="text-3xl"
@@ -324,6 +361,7 @@ export default {
               'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
               'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
             }"
+            @click.stop="expression += '1'"
           >
             <p
               class="text-3xl"
@@ -345,6 +383,7 @@ export default {
               'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
               'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
             }"
+            @click.stop="expression += '2'"
           >
             <p
               class="text-3xl"
@@ -366,6 +405,7 @@ export default {
               'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
               'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
             }"
+            @click.stop="expression += '3'"
           >
             <p
               class="text-3xl"
@@ -387,6 +427,7 @@ export default {
               'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
               'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
             }"
+            @click.stop="expression += '-'"
           >
             <p
               class="text-3xl"
@@ -410,6 +451,7 @@ export default {
               'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
               'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
             }"
+            @click.stop="expression += '.'"
           >
             <p
               class="text-3xl"
@@ -431,6 +473,7 @@ export default {
               'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
               'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
             }"
+            @click.stop="expression += '0'"
           >
             <p
               class="text-3xl"
@@ -452,6 +495,7 @@ export default {
               'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
               'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
             }"
+            @click.stop="expression += '/'"
           >
             <p
               class="text-3xl"
@@ -473,6 +517,7 @@ export default {
               'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
               'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
             }"
+            @click.stop="expression += '*'"
           >
             <p
               class="text-3xl"
@@ -496,6 +541,7 @@ export default {
               'bg-theme2-keyBg1 shadow-theme2-keySd1': bg === 2,
               'bg-theme3-keyBg1 shadow-theme3-keySd1': bg === 3,
             }"
+            @click="reset"
           >
             <p
               class="text-2xl"
@@ -517,6 +563,7 @@ export default {
               'bg-theme2-keyBg2 shadow-theme2-keySd2': bg === 2,
               'bg-theme3-keyBg2 shadow-theme3-keySd2': bg === 3,
             }"
+            @click="calculate"
           >
             <p
               class="text-3xl"
