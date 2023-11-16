@@ -9,6 +9,23 @@
       href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
       rel="stylesheet"
     />
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/sw.js", { scope: "/" });
+        });
+      }
+    </script>
+    <link
+      rel="apple-touch-icon"
+      href="/img/icons/apple-touch-icon-180x180.png"
+      sizes="180x180"
+    />
+    <link
+      rel="mask-icon"
+      href="/public/img/icons/favicon-32x32.png"
+      color="#FFFFFF"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator App | Bagus Setyo</title>
   </head>
