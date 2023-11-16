@@ -33,7 +33,7 @@ module.exports = {
           text2: "hsl(60, 10%, 19%)",
         },
         theme3: {
-          mainBg: "hsl(222, 26%, 31%)",
+          mainBg: "hsl(268, 75%, 9%)",
           toggleBg: "hsl(268, 71%, 12%)",
           screenBg: "hsl(268, 71%, 12%)",
           keyBg1: "hsl(281, 89%, 26%)",

@@ -177,9 +177,10 @@ export default {
           <button
             class="shadow-sm p-2 sm:w-3/5 w-4/5 rounded-lg"
             :class="{
-              'bg-theme1-keyBg3 shadow-theme1-keySd3': bg === 1,
-              'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
-              'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
+              'bg-theme1-keyBg3 shadow-theme1-keySd3 active:bg-white': bg === 1,
+              'bg-theme2-keyBg3 shadow-theme2-keySd3 active:bg-white': bg === 2,
+              'bg-theme3-keyBg3 shadow-theme3-keySd3 active:bg-purple-600':
+                bg === 3,
             }"
             @click.stop="expression += '7'"
           >
@@ -199,9 +200,10 @@ export default {
           <button
             class="shadow-sm p-2 sm:w-3/5 w-4/5 rounded-lg"
             :class="{
-              'bg-theme1-keyBg3 shadow-theme1-keySd3': bg === 1,
-              'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
-              'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
+              'bg-theme1-keyBg3 shadow-theme1-keySd3 active:bg-white': bg === 1,
+              'bg-theme2-keyBg3 shadow-theme2-keySd3 active:bg-white': bg === 2,
+              'bg-theme3-keyBg3 shadow-theme3-keySd3 active:bg-purple-600':
+                bg === 3,
             }"
             @click.stop="expression += '8'"
           >
@@ -221,9 +223,10 @@ export default {
           <button
             class="shadow-sm p-2 sm:w-3/5 w-4/5 rounded-lg"
             :class="{
-              'bg-theme1-keyBg3 shadow-theme1-keySd3': bg === 1,
-              'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
-              'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
+              'bg-theme1-keyBg3 shadow-theme1-keySd3 active:bg-white': bg === 1,
+              'bg-theme2-keyBg3 shadow-theme2-keySd3 active:bg-white': bg === 2,
+              'bg-theme3-keyBg3 shadow-theme3-keySd3 active:bg-purple-600':
+                bg === 3,
             }"
             @click.stop="expression += '9'"
           >
@@ -243,9 +246,12 @@ export default {
           <button
             class="shadow-sm p-3 sm:w-3/5 w-4/5 rounded-lg"
             :class="{
-              'bg-theme1-keyBg1 shadow-theme1-keySd1': bg === 1,
-              'bg-theme2-keyBg1 shadow-theme2-keySd1': bg === 2,
-              'bg-theme3-keyBg1 shadow-theme3-keySd1': bg === 3,
+              'bg-theme1-keyBg1 shadow-theme1-keySd1 active:bg-blue-400':
+                bg === 1,
+              'bg-theme2-keyBg1 shadow-theme2-keySd1 active:bg-cyan-300':
+                bg === 2,
+              'bg-theme3-keyBg1 shadow-theme3-keySd1 active:bg-purple-500':
+                bg === 3,
             }"
             @click.stop="expression -= expression"
           >
@@ -267,9 +273,10 @@ export default {
           <button
             class="shadow-sm p-2 sm:w-3/5 w-4/5 rounded-lg"
             :class="{
-              'bg-theme1-keyBg3 shadow-theme1-keySd3': bg === 1,
-              'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
-              'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
+              'bg-theme1-keyBg3 shadow-theme1-keySd3 active:bg-white': bg === 1,
+              'bg-theme2-keyBg3 shadow-theme2-keySd3 active:bg-white': bg === 2,
+              'bg-theme3-keyBg3 shadow-theme3-keySd3 active:bg-purple-600':
+                bg === 3,
             }"
             @click.stop="expression += '4'"
           >
@@ -289,9 +296,10 @@ export default {
           <button
             class="shadow-sm p-2 sm:w-3/5 w-4/5 rounded-lg"
             :class="{
-              'bg-theme1-keyBg3 shadow-theme1-keySd3': bg === 1,
-              'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
-              'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
+              'bg-theme1-keyBg3 shadow-theme1-keySd3 active:bg-white': bg === 1,
+              'bg-theme2-keyBg3 shadow-theme2-keySd3 active:bg-white': bg === 2,
+              'bg-theme3-keyBg3 shadow-theme3-keySd3 active:bg-purple-600':
+                bg === 3,
             }"
             @click.stop="expression += '5'"
           >
@@ -311,9 +319,10 @@ export default {
           <button
             class="shadow-sm p-2 sm:w-3/5 w-4/5 rounded-lg"
             :class="{
-              'bg-theme1-keyBg3 shadow-theme1-keySd3': bg === 1,
-              'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
-              'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
+              'bg-theme1-keyBg3 shadow-theme1-keySd3 active:bg-white': bg === 1,
+              'bg-theme2-keyBg3 shadow-theme2-keySd3 active:bg-white': bg === 2,
+              'bg-theme3-keyBg3 shadow-theme3-keySd3 active:bg-purple-600':
+                bg === 3,
             }"
             @click.stop="expression += '6'"
           >
@@ -333,9 +342,10 @@ export default {
           <button
             class="shadow-sm p-2 sm:w-3/5 w-4/5 rounded-lg"
             :class="{
-              'bg-theme1-keyBg3 shadow-theme1-keySd3': bg === 1,
-              'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
-              'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
+              'bg-theme1-keyBg3 shadow-theme1-keySd3 active:bg-white': bg === 1,
+              'bg-theme2-keyBg3 shadow-theme2-keySd3 active:bg-white': bg === 2,
+              'bg-theme3-keyBg3 shadow-theme3-keySd3 active:bg-purple-600':
+                bg === 3,
             }"
             @click.stop="expression += '+'"
           >
@@ -357,9 +367,10 @@ export default {
           <button
             class="shadow-sm p-2 sm:w-3/5 w-4/5 rounded-lg"
             :class="{
-              'bg-theme1-keyBg3 shadow-theme1-keySd3': bg === 1,
-              'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
-              'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
+              'bg-theme1-keyBg3 shadow-theme1-keySd3 active:bg-white': bg === 1,
+              'bg-theme2-keyBg3 shadow-theme2-keySd3 active:bg-white': bg === 2,
+              'bg-theme3-keyBg3 shadow-theme3-keySd3 active:bg-purple-600':
+                bg === 3,
             }"
             @click.stop="expression += '1'"
           >
@@ -379,9 +390,10 @@ export default {
           <button
             class="shadow-sm p-2 sm:w-3/5 w-4/5 rounded-lg"
             :class="{
-              'bg-theme1-keyBg3 shadow-theme1-keySd3': bg === 1,
-              'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
-              'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
+              'bg-theme1-keyBg3 shadow-theme1-keySd3 active:bg-white': bg === 1,
+              'bg-theme2-keyBg3 shadow-theme2-keySd3 active:bg-white': bg === 2,
+              'bg-theme3-keyBg3 shadow-theme3-keySd3 active:bg-purple-600':
+                bg === 3,
             }"
             @click.stop="expression += '2'"
           >
@@ -401,9 +413,10 @@ export default {
           <button
             class="shadow-sm p-2 sm:w-3/5 w-4/5 rounded-lg"
             :class="{
-              'bg-theme1-keyBg3 shadow-theme1-keySd3': bg === 1,
-              'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
-              'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
+              'bg-theme1-keyBg3 shadow-theme1-keySd3 active:bg-white': bg === 1,
+              'bg-theme2-keyBg3 shadow-theme2-keySd3 active:bg-white': bg === 2,
+              'bg-theme3-keyBg3 shadow-theme3-keySd3 active:bg-purple-600':
+                bg === 3,
             }"
             @click.stop="expression += '3'"
           >
@@ -423,9 +436,10 @@ export default {
           <button
             class="shadow-sm p-2 sm:w-3/5 w-4/5 rounded-lg"
             :class="{
-              'bg-theme1-keyBg3 shadow-theme1-keySd3': bg === 1,
-              'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
-              'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
+              'bg-theme1-keyBg3 shadow-theme1-keySd3 active:bg-white': bg === 1,
+              'bg-theme2-keyBg3 shadow-theme2-keySd3 active:bg-white': bg === 2,
+              'bg-theme3-keyBg3 shadow-theme3-keySd3 active:bg-purple-600':
+                bg === 3,
             }"
             @click.stop="expression += '-'"
           >
@@ -447,9 +461,10 @@ export default {
           <button
             class="shadow-sm p-2 sm:w-3/5 w-4/5 rounded-lg"
             :class="{
-              'bg-theme1-keyBg3 shadow-theme1-keySd3': bg === 1,
-              'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
-              'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
+              'bg-theme1-keyBg3 shadow-theme1-keySd3 active:bg-white': bg === 1,
+              'bg-theme2-keyBg3 shadow-theme2-keySd3 active:bg-white': bg === 2,
+              'bg-theme3-keyBg3 shadow-theme3-keySd3 active:bg-purple-600':
+                bg === 3,
             }"
             @click.stop="expression += '.'"
           >
@@ -469,9 +484,10 @@ export default {
           <button
             class="shadow-sm p-2 sm:w-3/5 w-4/5 rounded-lg"
             :class="{
-              'bg-theme1-keyBg3 shadow-theme1-keySd3': bg === 1,
-              'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
-              'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
+              'bg-theme1-keyBg3 shadow-theme1-keySd3 active:bg-white': bg === 1,
+              'bg-theme2-keyBg3 shadow-theme2-keySd3 active:bg-white': bg === 2,
+              'bg-theme3-keyBg3 shadow-theme3-keySd3 active:bg-purple-600':
+                bg === 3,
             }"
             @click.stop="expression += '0'"
           >
@@ -491,9 +507,10 @@ export default {
           <button
             class="shadow-sm p-2 sm:w-3/5 w-4/5 rounded-lg"
             :class="{
-              'bg-theme1-keyBg3 shadow-theme1-keySd3': bg === 1,
-              'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
-              'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
+              'bg-theme1-keyBg3 shadow-theme1-keySd3 active:bg-white': bg === 1,
+              'bg-theme2-keyBg3 shadow-theme2-keySd3 active:bg-white': bg === 2,
+              'bg-theme3-keyBg3 shadow-theme3-keySd3 active:bg-purple-600':
+                bg === 3,
             }"
             @click.stop="expression += '/'"
           >
@@ -513,9 +530,10 @@ export default {
           <button
             class="shadow-sm p-2 sm:w-3/5 w-4/5 rounded-lg"
             :class="{
-              'bg-theme1-keyBg3 shadow-theme1-keySd3': bg === 1,
-              'bg-theme2-keyBg3 shadow-theme2-keySd3': bg === 2,
-              'bg-theme3-keyBg3 shadow-theme3-keySd3': bg === 3,
+              'bg-theme1-keyBg3 shadow-theme1-keySd3 active:bg-white': bg === 1,
+              'bg-theme2-keyBg3 shadow-theme2-keySd3 active:bg-white': bg === 2,
+              'bg-theme3-keyBg3 shadow-theme3-keySd3 active:bg-purple-600':
+                bg === 3,
             }"
             @click.stop="expression += '*'"
           >
@@ -537,9 +555,12 @@ export default {
           <button
             class="shadow-sm p-2 sm:w-4/5 w-5/6 rounded-lg"
             :class="{
-              'bg-theme1-keyBg1 shadow-theme1-keySd1': bg === 1,
-              'bg-theme2-keyBg1 shadow-theme2-keySd1': bg === 2,
-              'bg-theme3-keyBg1 shadow-theme3-keySd1': bg === 3,
+              'bg-theme1-keyBg1 shadow-theme1-keySd1 active:bg-blue-400':
+                bg === 1,
+              'bg-theme2-keyBg1 shadow-theme2-keySd1 active:bg-cyan-300':
+                bg === 2,
+              'bg-theme3-keyBg1 shadow-theme3-keySd1 active:bg-purple-500':
+                bg === 3,
             }"
             @click="reset"
           >
@@ -559,9 +580,12 @@ export default {
           <button
             class="shadow-sm p-2 sm:w-4/5 w-5/6 rounded-lg"
             :class="{
-              'bg-theme1-keyBg2 shadow-theme1-keySd2': bg === 1,
-              'bg-theme2-keyBg2 shadow-theme2-keySd2': bg === 2,
-              'bg-theme3-keyBg2 shadow-theme3-keySd2': bg === 3,
+              'bg-theme1-keyBg2 shadow-theme1-keySd2 active:bg-red-400':
+                bg === 1,
+              'bg-theme2-keyBg2 shadow-theme2-keySd2 active:bg-orange-500':
+                bg === 2,
+              'bg-theme3-keyBg2 shadow-theme3-keySd2 active:bg-teal-200':
+                bg === 3,
             }"
             @click="calculate"
           >
